@@ -1,14 +1,16 @@
 import React from "react";
 import { ReactDOM } from "react";
 import { render } from "react-dom";
+import S from "./Nav.module.css"
+import SearchBar from "../SearchBar/SearchBar.jsx";
 
 export default function Nav(){
     return (
-        <div>
+        <div className={S.container}>
             <div>Logo</div>
             <p>Inicio</p>
-            <div>Buscador</div>
             <p>Desarrollador</p>
+            <SearchBar/>
         </div>
     )
 }
